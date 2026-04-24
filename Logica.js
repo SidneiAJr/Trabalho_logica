@@ -1,0 +1,3 @@
+function trocarCartas(){}
+
+function trocarCor(){}
