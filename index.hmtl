@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Logica</title>
+    <script src=""></script>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <div class="main">
+        <div class="texto">
+            <h1>Jogo da Memoria</h1>
+            <h2>Desevolvido por Sidnei & Davi</h2>
+        </div>
+        <div class="card1">
+            <h1>Planeta</h1>
+            <img src="" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt sit nostrum accusamus ipsa necessitatibus temporibus, blanditiis quos quam ducimus! Doloribus nemo tempora sequi non illo numquam voluptate! Explicabo, atque rerum.</p>
+        </div>
+        <div class="card2">
+            <h1>Planeta</h1>
+            <img src="" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt sit nostrum accusamus ipsa necessitatibus temporibus, blanditiis quos quam ducimus! Doloribus nemo tempora sequi non illo numquam voluptate! Explicabo, atque rerum.</p>
+        </div>
+        <div class="card3">
+            <h1>Planeta</h1>
+            <img src="" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt sit nostrum accusamus ipsa necessitatibus temporibus, blanditiis quos quam ducimus! Doloribus nemo tempora sequi non illo numquam voluptate! Explicabo, atque rerum.</p>
+        </div>
+        <div class="card4">
+            <h1>Planeta</h1>
+            <img src="" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt sit nostrum accusamus ipsa necessitatibus temporibus, blanditiis quos quam ducimus! Doloribus nemo tempora sequi non illo numquam voluptate! Explicabo, atque rerum.</p>
+        </div>
+        <div class="card5">
+            <h1>Planeta</h1>
+            <img src="" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt sit nostrum accusamus ipsa necessitatibus temporibus, blanditiis quos quam ducimus! Doloribus nemo tempora sequi non illo numquam voluptate! Explicabo, atque rerum.</p>
+        </div>
+        <div class="card6">
+            <h1>Planeta</h1>
+            <img src="" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt sit nostrum accusamus ipsa necessitatibus temporibus, blanditiis quos quam ducimus! Doloribus nemo tempora sequi non illo numquam voluptate! Explicabo, atque rerum.</p>
+        </div>
+        <div class="card7">
+            <h1>Planeta</h1>
+            <img src="" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt sit nostrum accusamus ipsa necessitatibus temporibus, blanditiis quos quam ducimus! Doloribus nemo tempora sequi non illo numquam voluptate! Explicabo, atque rerum.</p>
+        </div>
+    </div>
+</body>
+</html>
