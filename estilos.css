@@ -3,3 +3,36 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+   background: linear-gradient(to left, #00ff99, #0033cc);
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 100px;
+}
+
+.card1,.card2,.card3,.card4,.card5,.card6,.card7{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   height: 50%;
+   border: 3px solid black;
+}
+
+h1{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+}

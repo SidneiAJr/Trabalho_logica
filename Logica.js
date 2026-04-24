@@ -1,3 +1,9 @@
-function trocarCartas(){}
+function trocarCartas(){
+
+
+
+
+    
+}
 
 function trocarCor(){}
