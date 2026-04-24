@@ -13,8 +13,7 @@ body{
     justify-content: center;
     align-content: center;
     text-align: center;
-    height: 100%;
-    padding: 100px;
+    padding: 50px;
 }
 
 .card1,.card2,.card3,.card4,.card5,.card6,.card7{
@@ -22,11 +21,20 @@ body{
    justify-content: center;
    align-items: center;
    text-align: center;
+   flex-direction: column;
    height: 50%;
    border: 3px solid black;
+   margin: 5px;
 }
 
 h1{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+p{
+    font-size: 15px;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
