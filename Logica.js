@@ -79,3 +79,35 @@ function resetar() {
     segundaCarta = null
     travar = false
 }
+
+let pontos = 0; // valor da pontuação
+const pontuacaoElemento = document.getElementById("pont"); // elemento HTML
+
+function atualizarPontuacao() {
+    if(pontos<=0){
+      pontuacaoElemento.innerHTML = `Pontuação Negativa Perdeu! ${pontos}`;
+    }else{
+      pontuacaoElemento.innerHTML = `Pontuação Positiva! ${pontos}`;
+    }
+}
+
+function trocarCartas() {
+    let igual = primeiraCarta.dataset.valor === segundaCarta.dataset.valor;
+
+    if(igual){
+        primeiraCarta.style.backgroundColor = "green";
+        segundaCarta.style.backgroundColor = "green";
+
+        primeiraCarta.removeEventListener("click", virarCarta);
+        segundaCarta.removeEventListener("click", virarCarta);
+
+        // aumenta a pontuação
+        pontos += 1;
+        atualizarPontuacao(); // atualiza o HTML
+
+        resetar();
+    } else {
+        pontos -=1;
+        trocarCor();
+    }
+}

@@ -95,3 +95,18 @@ img {
 .card5:hover, .card6:hover, .card7:hover, .card8:hover{
     transform: scale(1.05);
 }
+
+button{
+    width: 80px;
+    height: 50px;
+    border-radius: 5px;
+    background-color:#8b890b;
+    border: none;
+    font-weight: bolder;
+}
+
+button:hover{
+    border: 3px solid black;
+    background-color: red;
+    cursor: pointer;
+}
