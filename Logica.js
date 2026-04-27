@@ -87,14 +87,14 @@ const Tentativas = document.getElementById("Tent"); // elemento HTML
 
 function atualizarPontuacao() {
     if(pontos<=0){
-      pontuacaoElemento.style.fontSize = "30px"
-      pontuacaoElemento.style.color = "red"
-      pontuacaoElemento.innerHTML = `Pontuação Negativa Perdeu! ${pontos}`;
-      Tentativas.innerHTML = `Tentativas ${tentativas}`;
+      pontuacaoElemento.style.fontSize = "20px"
+      pontuacaoElemento.style.fontStyle = "bolder"
+      pontuacaoElemento.innerHTML = `Pontuação Negativa: ${pontos}`;
+      Tentativas.innerHTML = `Tentativas: ${tentativas}`;
     }else{
-      Tentativas.style.fontSize = "30px"
-      Tentativas.innerHTML = `Tentativas ${tentativas}`;
-      pontuacaoElemento.innerHTML = `Pontuação Positiva! ${pontos}`;
+      Tentativas.style.fontSize = "20px"
+      Tentativas.innerHTML = `Tentativas: ${tentativas}`;
+      pontuacaoElemento.innerHTML = `Pontuação: ${pontos}`;
     }
 }
 
@@ -109,7 +109,7 @@ function trocarCartas() {
         atualizarPontuacao(); 
         resetar();
     } else {
-        pontos -=1;
+        pontos -=0;
         tentativas +=1;
         atualizarPontuacao(); 
         trocarCor();
