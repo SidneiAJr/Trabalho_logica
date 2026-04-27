@@ -5,18 +5,27 @@
 }
 
 body{
-   background: linear-gradient(to left, #00ff99, #0033cc);
+   background: linear-gradient(to left, #8b890b, #052277);
 }
 
 .main{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     align-content: center;
     text-align: center;
     padding: 50px;
 }
 
-.card1,.card2,.card3,.card4,.card5,.card6,.card7{
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 200px); 
+    gap: 15px;
+    justify-content: center;
+}
+
+.card1,.card2,.card3,.card4,.card5,.card6,.card7, .card8{
    display: flex;
    justify-content: center;
    align-items: center;
@@ -43,4 +52,46 @@ p{
 img{
     height: 200px;
     width: 200px;
+}
+
+.card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8{
+    perspective: 1000px;
+}
+
+.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.card1 img, .card2 img, .card3 img, .card4 img,
+.card5 img, .card6 img, .card7 img, .card8 img {
+    backface-visibility: hidden;
+}
+
+.card1 img, .card2 img, .card3 img, .card4 img,
+.card5 img, .card6 img, .card7 img, .card8 img {
+    display: none;
+}
+
+.card1, .card2, .card3, .card4,
+.card5, .card6, .card7, .card8 {
+    background-color: gray;
+    cursor: pointer;
+}
+
+img {
+    display: none;
+}
+
+.card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover,
+.card5:hover, .card6:hover, .card7:hover, .card8:hover{
+    transform: scale(1.05);
 }
