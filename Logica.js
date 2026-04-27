@@ -101,9 +101,9 @@ function trocarCartas() {
         primeiraCarta.removeEventListener("click", virarCarta);
         segundaCarta.removeEventListener("click", virarCarta);
 
-        // aumenta a pontuação
+
         pontos += 1;
-        atualizarPontuacao(); // atualiza o HTML
+        atualizarPontuacao(); 
 
         resetar();
     } else {
