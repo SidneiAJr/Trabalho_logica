@@ -85,6 +85,8 @@ const pontuacaoElemento = document.getElementById("pont"); // elemento HTML
 
 function atualizarPontuacao() {
     if(pontos<=0){
+      pontuacaoElemento.style.fontSize = "30px"
+      pontuacaoElemento.style.color = "red"
       pontuacaoElemento.innerHTML = `Pontuação Negativa Perdeu! ${pontos}`;
     }else{
       pontuacaoElemento.innerHTML = `Pontuação Positiva! ${pontos}`;
@@ -97,14 +99,10 @@ function trocarCartas() {
     if(igual){
         primeiraCarta.style.backgroundColor = "green";
         segundaCarta.style.backgroundColor = "green";
-
         primeiraCarta.removeEventListener("click", virarCarta);
         segundaCarta.removeEventListener("click", virarCarta);
-
-
         pontos += 1;
         atualizarPontuacao(); 
-
         resetar();
     } else {
         pontos -=1;
