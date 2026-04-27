@@ -9,15 +9,19 @@ const cartas = [
     document.querySelector(".card8")
 ];
 
-const valores = [
-    "Malphite", "Malphite",
-    "Fiora", "Fiora",
-    "Jarvan", "Jarvan",
-    "Sion", "Sion"
-];
+const main = document.querySelector(".main");
 
-cartas.forEach((carta, index) => {
-    carta.dataset.valor = valores[index];
+const cartasArray = Array.from(cartas);
+
+cartasArray.sort(() => Math.random() - 0.5);
+
+const container = document.querySelector(".cards");
+
+cartasArray.forEach(carta => container.appendChild(carta));
+
+cartas.forEach(carta => {
+    let img = carta.querySelector("img").src;
+    carta.dataset.valor = img;
 });
 
 let primeiraCarta = null;
@@ -32,7 +36,7 @@ function virarCarta() {
     if (travar) return;
     if (this === primeiraCarta) return;
 
-    this.style.backgroundColor = "white";
+    this.querySelector("img").style.display = "block";
 
     if(!primeiraCarta){
         primeiraCarta = this;
@@ -52,6 +56,9 @@ function trocarCartas(){
         primeiraCarta.style.backgroundColor = "green";
         segundaCarta.style.backgroundColor = "green";
 
+        primeiraCarta.removeEventListener("click", virarCarta);
+        segundaCarta.removeEventListener("click", virarCarta);
+
         resetar();
     } else {
         trocarCor();
@@ -60,11 +67,11 @@ function trocarCartas(){
 
 function trocarCor(){
     setTimeout(() => {
-        primeiraCarta.style.backgroundColor = "gray"
-        segundaCarta.style.backgroundColor = "gray"
+        primeiraCarta.querySelector("img").style.display = "none";
+        segundaCarta.querySelector("img").style.display = "none";
 
         resetar()
-    },  1000)
+    }, 1000)
 }
 
 function resetar() {
