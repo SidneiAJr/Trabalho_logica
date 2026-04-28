@@ -1,14 +1,37 @@
-# Jogo de Logica | Feito para o Senac RS
+# 🧠 Jogo de Logica | Feito para o Senac RS
+
 **Criado por Davi & Sidnei**
 
 ## Parte do Codigo:
 
 ```js
+/*
+O que é e esse codig?
+E um Jogo de Memoria feito com Hmtl css e JS Simples, onde o jogar clica com o mouse seleciona a carta e gera pontuação & conta as tentativas. 
+Explicação do Codigo:
 1 | Primeiro um objeto cartas para pegar cada carta por sua classe.
+2 | Depois fazer uma seleção pela classe
+3 | Depois Verifica o NodeList
+4 | Usamos forEach() para adicionar cada carta (agora embaralhada) ao contêiner container
+5 | Função que Vira as cartas & Embaralhas
+6 | Função que esconde as cartas
+7 | Função de Controle de destado
+8 | Função de Atualizar Pontuação
+9 | Função de Resetar pontuação
+10 | Função que esconde as cartas
+11 | Função Embaralha as cartas
+12 | Função Temporarizador 
+*/
 ```
 
----
-<img width="320" height="198" alt="image" src="https://github.com/user-attachments/assets/834f4ad1-72fb-42f5-9a96-c452d2caaf3a" />
+## Print do Jogo rodando: 
+<img width="1133" height="780" alt="image" src="https://github.com/user-attachments/assets/c248b853-1269-4e08-a1b6-3332a68bce2f" />
+
+## Função | Pontuação:
+
+<img width="548" height="359" alt="image" src="https://github.com/user-attachments/assets/3bc74a66-8832-4f21-8e21-7ad7c34ca965" />
 
 
-## Parte do Codigo:
+
+
+
