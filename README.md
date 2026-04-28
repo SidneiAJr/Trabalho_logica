@@ -7,6 +7,15 @@ Este é um jogo de memória simples criado com **HTML**, **CSS** e **JavaScript*
 
 O jogo possui um **temporizador** que limita o tempo para encontrar todos os pares, tornando a experiência mais desafiadora.
 
+## 🧩 Descrição do Jogo
+
+Este é um **jogo de memória simples** criado com HTML, CSS e JavaScript.  
+
+🎯 Objetivo: Encontrar todos os pares de cartas iguais no menor tempo possível.  
+🖱️ Como jogar: Clique em uma carta para virá-la. Se encontrar duas cartas iguais, elas permanecem viradas.  
+🏆 Pontuação: A cada par encontrado, a pontuação aumenta. O jogo também conta quantas tentativas o jogador fez.  
+⏱️ Temporizador: O jogo tem limite de tempo, aumentando o desafio.
+
 ## 🧩 Parte do Codigo:
 
 ```js
