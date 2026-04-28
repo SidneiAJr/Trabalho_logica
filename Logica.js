@@ -16,7 +16,7 @@ const cartas = [
     document.querySelector(".card8")
 ];
 
-const main = document.querySelector(".main");
+
 
 const cartasArray = Array.from(cartas);
 
@@ -115,6 +115,13 @@ function resetar_pont() {
     atualizarPontuacao();
     esconderTodasCartas();
     embaralharCartas();
+
+     cartas.forEach(carta => {
+        carta.querySelector("img").style.display = "none";
+        carta.style.backgroundColor = "";
+        carta.addEventListener("click", virarCarta); // 🔥 ESSENCIAL
+    });
+    
     fundo.style.background = 'url("https://w0.peakpx.com/wallpaper/230/86/HD-wallpaper-zac-zac-league-of-legends-lol-league-of-legends.jpg")'
     fundo.style.backgroundSize = 'cover'
     alert("Resetado | Jogos Reiniciado! 🤣🤣")
