@@ -49,23 +49,7 @@ function virarCarta() {
     trocarCartas();
 }
 
-function trocarCartas(){
-    let igual = primeiraCarta.dataset.valor === segundaCarta.dataset.valor;
-
-    if(igual){
-        primeiraCarta.style.backgroundColor = "green";
-        segundaCarta.style.backgroundColor = "green";
-
-        primeiraCarta.removeEventListener("click", virarCarta);
-        segundaCarta.removeEventListener("click", virarCarta);
-
-        resetar();
-    } else {
-        trocarCor();
-    }
-}
-
-function trocarCor(){
+function esconderCartas(){
     setTimeout(() => {
         primeiraCarta.querySelector("img").style.display = "none";
         segundaCarta.querySelector("img").style.display = "none";
@@ -112,6 +96,6 @@ function trocarCartas() {
         pontos -=1;
         tentativas +=1;
         atualizarPontuacao(); 
-        trocarCor();
+        esconderCartas();
     }
 }
