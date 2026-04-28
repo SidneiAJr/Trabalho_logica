@@ -26,7 +26,7 @@ Explicação do Codigo:
 ---
 
 ## 🧩 Print do Jogo rodando: 
-<img width="1133" height="780" alt="image" src="https://github.com/user-attachments/assets/c248b853-1269-4e08-a1b6-3332a68bce2f" />
+<img width="1223" height="835" alt="image" src="https://github.com/user-attachments/assets/01179ede-701d-45ba-81c2-e84646203651" />
 
 ---
 
