@@ -2,7 +2,7 @@
 
 **Criado por Davi & Sidnei**
 
-## Parte do Codigo:
+## 🧩 Parte do Codigo:
 
 ```js
 /*
