@@ -3,11 +3,6 @@
 **Criado por Davi & Sidnei**
 
 ## 🧩 Descrição do Jogo
-Este é um jogo de memória simples criado com **HTML**, **CSS** e **JavaScript**. O objetivo é encontrar pares de cartas iguais. O jogador deve clicar nas cartas para virá-las, e quando encontrar dois pares iguais, eles permanecem virados. A pontuação aumenta a cada par encontrado, e o jogo também conta as tentativas feitas pelo jogador.
-
-O jogo possui um **temporizador** que limita o tempo para encontrar todos os pares, tornando a experiência mais desafiadora.
-
-## 🧩 Descrição do Jogo
 
 Este é um **jogo de memória simples** criado com HTML, CSS e JavaScript.  
 
