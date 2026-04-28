@@ -64,10 +64,10 @@ function resetar() {
     travar = false
 }
 
-let pontos = 0; // valor da pontuação
+let pontos = 0; 
 let tentativas = 0;
-const pontuacaoElemento = document.getElementById("pont"); // elemento HTML
-const Tentativas = document.getElementById("Tent"); // elemento HTML
+const pontuacaoElemento = document.getElementById("pont"); 
+const Tentativas = document.getElementById("Tent"); 
 
 function atualizarPontuacao() {
     if(pontos<=0){
@@ -100,10 +100,23 @@ function trocarCartas() {
     }
 }
 
-function resetar_pont(){
-   resetar();  
-   pontos = 0;
-   tentativas = 0;
-   virarCarta();
-   atualizarPontuacao();
+function resetar_pont() {
+    resetar();  
+    pontos = 0;  
+    tentativas = 0;  
+    atualizarPontuacao();  
+    esconderCartas();  
+    embaralharCartas();  
+}
+
+function esconderCartas() {
+    cartas.forEach(carta => {
+        carta.querySelector("img").style.display = "none";  
+        carta.style.backgroundColor = "";  
+    });
+}
+
+function embaralharCartas() {
+    cartasArray.sort(() => Math.random() - 0.5);
+    cartasArray.forEach(carta => container.appendChild(carta));  
 }
