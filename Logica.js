@@ -210,3 +210,8 @@ function temporarizador() {
         }
     }, 1000); // Atualiza a cada segundo
 }
+
+function start(){
+    temporarizador()
+    atualizarPontuacao();
+}
