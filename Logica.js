@@ -105,11 +105,11 @@ function resetar_pont() {
     pontos = 0;  
     tentativas = 0;  
     atualizarPontuacao();  
-    esconderCartas();  
+    esconderTodasCartas();  
     embaralharCartas();  
 }
 
-function esconderCartas() {
+function esconderTodasCartas() {
     cartas.forEach(carta => {
         carta.querySelector("img").style.display = "none";  
         carta.style.backgroundColor = "";  
