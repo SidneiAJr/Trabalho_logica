@@ -36,7 +36,11 @@ Explicação do Codigo:
 
 ---
 
+## 🧩 Função | Temporizador
 
+<img width="432" height="279" alt="image" src="https://github.com/user-attachments/assets/f3cff55a-d956-40c9-a990-d6986583e043" />
+
+---
 
 
 
