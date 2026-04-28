@@ -23,6 +23,8 @@ Explicação do Codigo:
 */
 ```
 
+## Print do Jogo rodando: 
+<img width="1133" height="780" alt="image" src="https://github.com/user-attachments/assets/c248b853-1269-4e08-a1b6-3332a68bce2f" />
 
 
 
