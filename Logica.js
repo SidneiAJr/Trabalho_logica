@@ -1,3 +1,10 @@
+/*
+Explicação do Codigo:
+Primeiro um objeto cartas para pegar cada carta por sua classe.
+depois fazer uma seleção pela classe
+depois
+*/
+
 const cartas = [
     document.querySelector(".card1"),
     document.querySelector(".card2"),
@@ -38,7 +45,7 @@ function virarCarta() {
 
     this.querySelector("img").style.display = "block";
 
-    if(!primeiraCarta){
+    if (!primeiraCarta) {
         primeiraCarta = this;
         return;
     }
@@ -49,7 +56,7 @@ function virarCarta() {
     trocarCartas();
 }
 
-function esconderCartas(){
+function esconderCartas() {
     setTimeout(() => {
         primeiraCarta.querySelector("img").style.display = "none";
         segundaCarta.querySelector("img").style.display = "none";
@@ -64,49 +71,49 @@ function resetar() {
     travar = false
 }
 
-let pontos = 0; 
+let pontos = 0;
 let tentativas = 0;
-const pontuacaoElemento = document.getElementById("pont"); 
-const Tentativas = document.getElementById("Tent"); 
+const pontuacaoElemento = document.getElementById("pont");
+const Tentativas = document.getElementById("Tent");
 const fundo = document.getElementById("bd")
 
 function atualizarPontuacao() {
-    if(pontos<=0){
-      pontuacaoElemento.style.fontSize = "20px"
-      pontuacaoElemento.style.fontStyle = "bolder"
-      pontuacaoElemento.innerHTML = `Pontuação: ${pontos}`;
-      Tentativas.innerHTML = `Tentativas: ${tentativas}`;
-    }else{
-      Tentativas.style.fontSize = "20px"
-      Tentativas.innerHTML = `Tentativas: ${tentativas}`;
-      pontuacaoElemento.innerHTML = `Pontuação: ${pontos}`;
+    if (pontos <= 0) {
+        pontuacaoElemento.style.fontSize = "20px"
+        pontuacaoElemento.style.fontStyle = "bolder"
+        pontuacaoElemento.innerHTML = `Pontuação: ${pontos}`;
+        Tentativas.innerHTML = `Tentativas: ${tentativas}`;
+    } else {
+        Tentativas.style.fontSize = "20px"
+        Tentativas.innerHTML = `Tentativas: ${tentativas}`;
+        pontuacaoElemento.innerHTML = `Pontuação: ${pontos}`;
     }
 }
 
 function trocarCartas() {
     let igual = primeiraCarta.dataset.valor === segundaCarta.dataset.valor;
 
-    if(igual){
+    if (igual) {
         primeiraCarta.removeEventListener("click", virarCarta);
         segundaCarta.removeEventListener("click", virarCarta);
         pontos += 1;
-        tentativas +=1;
-        atualizarPontuacao(); 
+        tentativas += 1;
+        atualizarPontuacao();
         resetar();
     } else {
-        pontos -=1;
-        tentativas +=1;
-        atualizarPontuacao(); 
+        pontos -= 1;
+        tentativas += 1;
+        atualizarPontuacao();
         esconderCartas();
     }
 }
 
 function resetar_pont() {
-    resetar();  
-    pontos = 0;  
-    tentativas = 0;  
-    atualizarPontuacao();  
-    esconderTodasCartas();  
+    resetar();
+    pontos = 0;
+    tentativas = 0;
+    atualizarPontuacao();
+    esconderTodasCartas();
     embaralharCartas();
     fundo.style.background = 'url("https://w0.peakpx.com/wallpaper/230/86/HD-wallpaper-zac-zac-league-of-legends-lol-league-of-legends.jpg")'
     fundo.style.backgroundSize = 'cover'
@@ -115,12 +122,27 @@ function resetar_pont() {
 
 function esconderTodasCartas() {
     cartas.forEach(carta => {
-        carta.querySelector("img").style.display = "none";  
-        carta.style.backgroundColor = "";  
+        carta.querySelector("img").style.display = "none";
+        carta.style.backgroundColor = "";
     });
 }
 
 function embaralharCartas() {
     cartasArray.sort(() => Math.random() - 0.5);
-    cartasArray.forEach(carta => container.appendChild(carta));  
+    cartasArray.forEach(carta => container.appendChild(carta));
+}
+
+let tempo = 300;
+const timer = document.getElementById("tempo")
+
+function temporarizador() {
+    intervalo = setInterval(() => {
+        if (tempo <= 0) {
+            clearInterval(intervalo);
+            timer.innerHTML = `Tempo Esgotado`
+        } else {
+            timer.innerHTML = `Tempo ${tempo}`;
+            tempo--;
+        }
+    }, 1000);
 }
