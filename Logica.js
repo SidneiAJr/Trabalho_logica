@@ -89,7 +89,7 @@ function atualizarPontuacao() {
     if(pontos<=0){
       pontuacaoElemento.style.fontSize = "20px"
       pontuacaoElemento.style.fontStyle = "bolder"
-      pontuacaoElemento.innerHTML = `Pontuação Negativa: ${pontos}`;
+      pontuacaoElemento.innerHTML = `Pontuação: ${pontos}`;
       Tentativas.innerHTML = `Tentativas: ${tentativas}`;
     }else{
       Tentativas.style.fontSize = "20px"
@@ -109,9 +109,17 @@ function trocarCartas() {
         atualizarPontuacao(); 
         resetar();
     } else {
-        pontos -=0;
+        pontos -=1;
         tentativas +=1;
         atualizarPontuacao(); 
         trocarCor();
     }
+}
+
+function resetar_pont(){
+   resetar();  
+   pontos = 0;
+   tentativas = 0;
+   virarCarta();
+   atualizarPontuacao();
 }
