@@ -24,10 +24,10 @@ Explicação do Codigo:
 */
 ```
 
-## Print do Jogo rodando: 
+## 🧩 Print do Jogo rodando: 
 <img width="1133" height="780" alt="image" src="https://github.com/user-attachments/assets/c248b853-1269-4e08-a1b6-3332a68bce2f" />
 
-## Função | Pontuação:
+## 🧩 Função | Pontuação:
 
 <img width="548" height="359" alt="image" src="https://github.com/user-attachments/assets/3bc74a66-8832-4f21-8e21-7ad7c34ca965" />
 
