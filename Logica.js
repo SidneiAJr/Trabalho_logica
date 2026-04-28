@@ -200,18 +200,18 @@ let tempo = 300; // Tempo inicial em segundos
 const timer = document.getElementById("tempo");
 
 function temporarizador() {
-    intervalo = setInterval(() => {
-        if (tempo <= 0) { // Quando o tempo acabar
-            clearInterval(intervalo);
-            timer.innerHTML = `Tempo Esgotado`;
-        } else {
+    intervalo = setInterval() => {
+
+            tempo --;
             timer.innerHTML = `Tempo ${tempo}`;
-            tempo--;
         }
-    }, 1000); // Atualiza a cada segundo
-}
+    }, 1000)}; // Atualiza a cada segundo
 
 function start(){
     temporarizador()
     atualizarPontuacao();
+    /*
+    Função Precisa Parar o tempo quando todas as cartas acertadas
+    Função Precisa zerar o tempo quando acertar todas ou resetar.
+    */
 }
