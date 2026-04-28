@@ -119,9 +119,9 @@ function resetar_pont() {
      cartas.forEach(carta => {
         carta.querySelector("img").style.display = "none";
         carta.style.backgroundColor = "";
-        carta.addEventListener("click", virarCarta); // 🔥 ESSENCIAL
+        carta.addEventListener("click", virarCarta);    
     });
-    
+
     fundo.style.background = 'url("https://w0.peakpx.com/wallpaper/230/86/HD-wallpaper-zac-zac-league-of-legends-lol-league-of-legends.jpg")'
     fundo.style.backgroundSize = 'cover'
     alert("Resetado | Jogos Reiniciado! 🤣🤣")
