@@ -68,6 +68,7 @@ let pontos = 0;
 let tentativas = 0;
 const pontuacaoElemento = document.getElementById("pont"); 
 const Tentativas = document.getElementById("Tent"); 
+const fundo = document.getElementById("bd")
 
 function atualizarPontuacao() {
     if(pontos<=0){
@@ -106,7 +107,10 @@ function resetar_pont() {
     tentativas = 0;  
     atualizarPontuacao();  
     esconderTodasCartas();  
-    embaralharCartas();  
+    embaralharCartas();
+    fundo.style.background = 'url("https://w0.peakpx.com/wallpaper/230/86/HD-wallpaper-zac-zac-league-of-legends-lol-league-of-legends.jpg")'
+    fundo.style.backgroundSize = 'cover'
+    alert("Resetado | Jogos Reiniciado! 🤣🤣")
 }
 
 function esconderTodasCartas() {
