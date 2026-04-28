@@ -137,7 +137,7 @@ function trocarCartas() {
     if (igual) { // Se forem iguais
         primeiraCarta.removeEventListener("click", virarCarta);
         segundaCarta.removeEventListener("click", virarCarta);
-        pontos += 1;
+        pontos += 3;
         tentativas += 1;
         atualizarPontuacao();
         resetar();
