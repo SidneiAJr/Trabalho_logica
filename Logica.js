@@ -131,6 +131,9 @@ function atualizarPontuacao() {
 // ============================================================
 // 13 | Função para comparar cartas
 // ============================================================
+
+let paresEncontrados = 0;
+
 function trocarCartas() {
     let igual = primeiraCarta.dataset.valor === segundaCarta.dataset.valor;
 
@@ -139,6 +142,7 @@ function trocarCartas() {
         segundaCarta.removeEventListener("click", virarCarta);
         pontos += 3;
         tentativas += 1;
+        paresEncontrados++;
         atualizarPontuacao();
         resetar();
     } else { // Se forem diferentes
@@ -147,6 +151,12 @@ function trocarCartas() {
         atualizarPontuacao();
         esconderCartas();
     }
+
+     if (paresEncontrados === cartas.length / 2) {
+        clearInterval(intervalo);
+        alert(`Você venceu em ${tempo} segundos!`);
+    }
+
 }
 
 // ============================================================
@@ -156,6 +166,7 @@ function resetar_pont() {
     resetar();
     pontos = 0;
     tentativas = 0;
+    paresEncontrados = 0;
     atualizarPontuacao();
     esconderTodasCartas();
     embaralharCartas();
@@ -167,7 +178,7 @@ function resetar_pont() {
     });
 
        clearInterval(intervalo);
-    tempo = 300; 
+    tempo = 0; 
     timer.innerHTML = `Tempo ${tempo}`;
 
     fundo.style.background = 'url("https://w0.peakpx.com/wallpaper/230/86/HD-wallpaper-zac-zac-league-of-legends-lol-league-of-legends.jpg")';
@@ -196,20 +207,24 @@ function embaralharCartas() {
 // ============================================================
 // 17 | Temporizador do jogo
 // ============================================================
-let tempo = 300; // Tempo inicial em segundos
+let tempo = 0; // Tempo inicial em segundos
+let intervalo;
 const timer = document.getElementById("tempo");
 
 function temporarizador() {
-    intervalo = setInterval() => {
+        clearInterval(intervalo); // evita múltiplos
 
-            tempo --;
-            timer.innerHTML = `Tempo ${tempo}`;
-        }
-    }, 1000)}; // Atualiza a cada segundo
+    intervalo = setInterval(() => {
+        tempo++;
+        timer.innerHTML = `Tempo ${tempo}`;
+    }, 1000);
+
+    } 
 
 function start(){
     temporarizador()
     atualizarPontuacao();
+   
     /*
     Função Precisa Parar o tempo quando todas as cartas acertadas
     Função Precisa zerar o tempo quando acertar todas ou resetar.
