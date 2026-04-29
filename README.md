@@ -1,6 +1,6 @@
 # 🧠 Jogo de Logica | Feito para o Senac RS
 
-[!link] (https://sidneiajr.github.io/Front_senac/Jogo%20Memoria/)
+[link] (https://sidneiajr.github.io/Front_senac/Jogo%20Memoria/)
 
 **Criado por Davi & Sidnei**
 
